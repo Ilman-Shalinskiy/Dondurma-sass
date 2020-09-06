@@ -4,13 +4,13 @@ window.addEventListener('DOMContentLoaded', () => {
     hamburger = document.querySelector('.hamburger');
 
     hamburger.addEventListener('click', () => {
-        hamburger.classList.toggle('hamburger_active');
+        hamburger.classList.toggle('is-active');
         menu.classList.toggle('menu_active');
     });
 
     menuItem.forEach(item => {
         item.addEventListener('click', () => {
-            hamburger.classList.toggle('hamburger_active');
+            hamburger.classList.toggle('is-active');
             menu.classList.toggle('menu_active');
         })
     })
