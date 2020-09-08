@@ -1,3 +1,24 @@
+$(document).ready(function(){
+    $('.location__carousel').slick({
+        speed: 1600,
+        dots: true,
+        prevArrow: '<button type="button" class="slick-prev"><span>&#8249;</span></button>',
+        nextArrow: '<button type="button" class="slick-next"><span>&#8250;</span></button>',
+      responsive: [
+        {
+          breakpoint: 768,
+          settings: {
+            arrows: false,
+          }
+        }
+      ]
+    });
+  });
+
+
+
+
+
 window.addEventListener('DOMContentLoaded', () => {
     const menu = document.querySelector('.menu'),
     menuItem = document.querySelectorAll('.menu_item'),
