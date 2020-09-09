@@ -78,16 +78,30 @@
 			color: #F2F2F2
 			max-width: 580px
 		&-btn
-			width: 256px
+			
+			display: inline-flex
+			text-align: center
+			justify-content: center
+			align-items: center
 			height: 80px
+			padding: 0px 40px
+			letter-spacing: 2px
 			border-radius: 100px
-			background: #ffffff
-			font-family: Montserrat
-			font-weight: 600
-			font-size: 32px
-			color: #333333
+			position: relative
+			top: 0
+			color: #272727
+			background-color: #ffffff
 			border: none
-			outline: none
+			transition: all 0.5s ease 0s
+
+			font-family: Montserrat
+			font-size: 32px
+			font-style: normal
+			font-weight: 600
+			&:hover
+				padding: 0px 80px
+				background-color: #dfdfdf
+
 	&__man
 		max-width: 240px
 		img
@@ -128,7 +142,7 @@
 
 
 .location
-	margin-top: 105px
+	margin-top: 110px
 	&__romb-right
 		position: absolute
 		right: 0
@@ -137,14 +151,16 @@
 		&-content
 			display: flex
 			justify-content: space-between
-			align-items: center
+			align-items: flex-start
 			margin-top: 72px
 		span
 			font-weight: bold
 	&__info
 		font-family: Montserrat
 		font-weight: normal
+		text-align: left
 		font-size: 24px
+		line-height: 44px
 		color: #FFFFFF
 	&__img
 		max-width: 360px
@@ -158,7 +174,7 @@
 	transform: translateY(-50%)
 	left: 25px
 	border: none
-	background-color: transparent;
+	background-color: transparent
 	font-size: 120px
 	color: #ffffff
 	
@@ -207,10 +223,10 @@
 		padding: 10px 40px 10px 15px
 		
 
-		font-family: Montserrat;
-		font-style: normal;
-		font-weight: 500;
-		font-size: 18px;
+		font-family: Montserrat
+		font-style: normal
+		font-weight: 500
+		font-size: 18px
 		
 		&-one
 			display: flex
@@ -221,7 +237,7 @@
 			background: #72003C
 			border-radius: 100px
 			cursor: pointer
-			color: #FFFFFF;
+			color: #FFFFFF
 			
 		&-two
 			margin-top: 10px
@@ -233,7 +249,7 @@
 			background: #72003C
 			border-radius: 100px
 			cursor: pointer
-			color: #FFFFFF;
+			color: #FFFFFF
 			
 
 

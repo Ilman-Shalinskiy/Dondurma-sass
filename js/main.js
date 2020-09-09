@@ -1,6 +1,6 @@
 $(document).ready(function(){
     $('.location__carousel').slick({
-        speed: 1600,
+        speed: 1400,
         dots: true,
         prevArrow: '<button type="button" class="slick-prev"><span>&#8249;</span></button>',
         nextArrow: '<button type="button" class="slick-next"><span>&#8250;</span></button>',
@@ -8,14 +8,13 @@ $(document).ready(function(){
         {
           breakpoint: 768,
           settings: {
+            speed: 500,
             arrows: false,
           }
         }
       ]
     });
   });
-
-
 
 
 
