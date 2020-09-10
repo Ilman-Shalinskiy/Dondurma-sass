@@ -78,8 +78,7 @@
     outline: none;
 }
 
-.slick-slide.slick-active{
-}
+
 [dir='rtl'] .slick-slide
 {
     float: right;
