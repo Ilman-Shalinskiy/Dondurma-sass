@@ -51,8 +51,7 @@
 		display: inline
 
 @media (max-width: 768px)
-	.hamburger 
-		display: block
+	
 	
 
 	.line-hover a
@@ -67,10 +66,15 @@
 	.promo, .location, 
 		margin-top: 40px
 
+	.hamburger 
+		display: block
+		z-index: 11
 	
+
 	.navbar
 		margin-top: 10px
 		.menu
+			z-index: 10
 			position: fixed
 			flex-direction: column
 			justify-content: flex-start
@@ -83,6 +87,7 @@
 			transition: 0.8s
 			background-color: #FFFFFF
 			&_active
+				
 				right: 0
 			.main__social
 				display: flex
@@ -149,8 +154,6 @@
 			max-width: 80%
 			margin: 0 auto
 			margin-top: 50px
-	.slick-slide
-    	opacity: 1;
 
 
 	.franchise
@@ -321,11 +324,6 @@
 	.location
 		&__info
 			font-size: 16px
-
-	.slick-dots button
-		width: 10px
-		height: 10px
-
 
 	.franchise
 		&__button

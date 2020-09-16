@@ -7,6 +7,7 @@
 	font-style: normal
 
 *
+	font-family: Montserrat
 	padding: 0
 	margin: 0
 
@@ -30,29 +31,10 @@ button
 	&:focus, &:active
 		outline: none
 
-a:hover
+a:hover, a:focus
 	text-decoration: none
-	color: #bebebe
-a:focus
-	color: #fffff
+	color: #ffffff
 
-.line-hover a
-	display: inline-block
-	text-decoration: none
-	cursor: pointer
-
-	&:after
-		background-color: #bebebe
-		display: block
-		content: ""
-		height: 3px
-		width: 0%
-		-webkit-transition: width .5s ease-in-out
-		-moz--transition: width .5s ease-in-out
-		transition: width .5s ease-in-out
-
-	&:hover:after, &:focus:after
-		width: 100%
 
 @import "general"
 @import "media"
