@@ -28,13 +28,6 @@
 		&__wrapper-content 
 			margin-top: 60px
 
-	.Cooperation
-		&__text
-			padding: 13px 5px 20px 30px
-
-		&__wrapper-content
-			margin-top: 60px
-
 @media (max-width: 855px)
 	
 	.main__order-btn
@@ -61,7 +54,7 @@
 		padding: 0 10px 0 60px
 
 
-	.promo, .location, .Cooperation
+	.promo, .location, .cooperation
 		margin-top: 40px
 
 
@@ -154,24 +147,37 @@
 			margin-top: 50px
 
 
-	.Cooperation
-		&__header
-			max-width: 80%
-			margin: 0 auto
-			margin-top: 50px
-
-		&__wrapper-content
-			margin: 0 auto
-			border-radius: 15px
-			margin-top: 40px
-		&__button
-			padding-right: 20px
-
+	.cooperation
 		&__text
 			font-size: 18px
 			line-height: 24px
+			padding: 0
 
+		.tabcontainer
+			flex-direction: column-reverse
 
+		.tabheader 
+			margin-top: 20px
+			padding: 0
+			h3
+				font-size: 22px
+			&__items
+				margin-top: 25px
+				padding-left: 8px
+			&__item
+				font-size: 18px
+				margin-top: 10px
+				&_active 
+					font-size: 20px
+		.tabcontent
+			margin-top: 20px
+		
+
+	
+	
+	
+	
+	
 	.footer__wrapper-team
 		padding: 20px 20px
 
@@ -228,12 +234,13 @@
 	.promo__man, .location__img
 		display: none
 		
-	.Cooperation
+	.cooperation
 		&__text
-			font-size: 20px
+			font-size: 16px
+			font-weight: 500
 			line-height: 28px
-			border: none
-			padding: 13px 20px 10px 20px
+			
+			
 		&__button
 			width: 100%
 			flex-direction: row
@@ -242,8 +249,7 @@
 				margin-right: 10px
 			&-two
 				margin: 0
-		&__wrapper-content
-			flex-direction: column
+		
 
 @media (max-width: 550px)
 	.navbar
@@ -324,7 +330,7 @@
 				a 
 					font-size: 22px
 
-	.Cooperation
+	.cooperation
 		&__button
 			font-size: 16px;	
 			&-one
@@ -333,10 +339,24 @@
 			&-two	
 				width: 120px
 				height: 45px
-		&__text
+		
+		.tabheader 
+			margin-top: 20px
 			font-size: 16px
-			line-height: 20px;
-			padding: 13px 10px 10px 10px
+			padding: 0
+			h3
+				font-size: 16px
+				font-weight: 400
+			&__items
+				margin-top: 25px
+				padding-left: 8px
+			&__item
+				font-size: 16px
+				margin-top: 10px
+				&_active 
+					font-size: 18px
+		.tabcontent
+			margin-top: 20px
 
 	.footer
 		&__about
@@ -378,7 +398,7 @@
 			a
 				font-size: 20px
 
-	.Cooperation
+	.cooperation
 		&__button
 			font-size: 14px;	
 			&-one
@@ -388,6 +408,6 @@
 				width: 100px
 				height: 40px
 		&__text
-			font-size: 14px
+			font-size: 11px
 
 

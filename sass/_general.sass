@@ -54,6 +54,7 @@
 .logo
 	max-width: 150px
 	flex: 0 1 150px
+
 .menu
 	display: flex
 	flex: 1 1 auto
@@ -203,38 +204,29 @@
 		max-width: 360px
 		
 	
-.Cooperation
+.cooperation
 	margin-top: 120px
-	&__wrapper
-		&-content
-			display: flex
-			justify-content: center
-			align-items: center
-			background-color: #fff
-			border-radius: 15px
-			min-height: 135px
-			margin-top: 72px
-			max-width: 900px
+	min-height: 500px
+		
 	&__text
 		font-weight: normal
 		font-size: 20px
 		line-height: 28px
-		color: #212121
-		padding: 13px 40px 30px
+		padding: 15px 5px
 		max-width: 700px
 		margin-bottom: 0
-		border-right: 2px dotted rgba(114, 0, 60, 0.6)
-		text-align: center
+		text-align: left
 		
 
-
+		
+			
 	&__button
+		// border-top: 2px dashed #72003C
+		width: 98%
 		display: flex
-		flex-direction: column
-		justify-content: center
-		align-items: center
+		justify-content: space-around
+		padding: 10px 0
 		text-align: center
-		padding: 10px 40px 10px 15px
 		font-style: normal
 		font-weight: 500
 		font-size: 18px
@@ -251,7 +243,6 @@
 			color: #FFFFFF
 			
 		&-two
-			margin-top: 10px
 			display: flex
 			justify-content: center
 			align-items: center
@@ -261,6 +252,50 @@
 			border-radius: 100px
 			cursor: pointer
 			color: #FFFFFF
+
+	.tabcontainer
+		display: flex
+		align-items: start		
+		
+	.tabcontent
+		width: 98%
+		flex: 0 1 65%
+		
+	.tabheader 
+		font-weight: 700
+		font-size: 16px
+		padding: 15px 30px 35px
+		flex: 0 1 35%
+		&__items
+			margin-top: 35px
+			padding-left: 26px
+			border-left: 1px solid #000
+		&__item
+			font-size: 18px
+			font-weight: 300
+			margin-top: 10px
+			cursor: pointer
+			transition: .3s all
+			&_active 
+				color: #000
+				font-size: 20px
+				font-weight: 700
+				transition-duration: .5s 
+	.show 
+		display: block
+
+	.hide 
+		display: none
+	
+	.fade 
+		animation-name: fade
+		animation-duration: 2.5s
+
+	@keyframes fade 
+		from 
+			opacity: 0.1
+		to 
+			opacity: 1
 			
 
 
@@ -301,4 +336,8 @@
 		margin-top: 40px
 		padding: 20px 0
 		border-top: 1px solid #fff
+
+
+    
+
 
