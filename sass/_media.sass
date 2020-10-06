@@ -84,16 +84,20 @@
 				display: flex
 				margin: 0 auto
 				flex-direction: row
-			.main__social-item
-				display: flex
-				justify-content: center
-				align-items: center
-				background: #72013C
-				width: 50px
-				height: 50px
-				border-radius: 100%
-				margin: 0 8px
-				padding: 5px
+				&-item
+					display: flex
+					justify-content: center
+					align-items: center
+					background: #72013C
+					width: 50px
+					height: 50px
+					border-radius: 100%
+					margin: 0 8px
+					padding: 5px
+					img
+						width: 24px
+						height: 24px
+						font-weight: 500
 			&__item
 				margin: 0
 				width: 100%
@@ -140,6 +144,8 @@
 
 	.location
 		&__info
+			font-size: 22px
+			line-height: 36px
 			&-item
 				a
 					font-size: 30px
@@ -155,7 +161,6 @@
 			line-height: 24px
 			padding: 0
 			
-
 		.tabcontainer
 			flex-direction: column-reverse
 
@@ -163,17 +168,17 @@
 			margin-top: 20px
 			padding: 0
 			h3
-				font-size: 22px
+				font-size: 26px
 			&__items
 				margin-top: 25px
 				padding-left: 8px
 			&__item
-				font-size: 18px
+				font-size: 22px
 				margin-top: 10px
 				&_active 
-					font-size: 20px
+					font-size: 26px
 		.tabcontent
-			margin-top: 20px
+			margin-top: 30px
 		
 
 	
@@ -191,8 +196,6 @@
 	.logo
 		max-width: 120px
 
-	.text
-		font-size: 40px
 
 	.main
 		&__order
@@ -236,6 +239,18 @@
 		margin-top: 40px
 	.promo__man, .location__img
 		display: none
+	
+	.location
+		&__info
+			font-size: 20px
+			line-height: 36px
+			&-item
+				a
+					font-size: 26px
+		&__header
+			max-width: 80%
+			margin: 0 auto
+			margin-top: 50px
 		
 	.cooperation
 		&__text
@@ -255,6 +270,8 @@
 		
 
 @media (max-width: 550px)
+	.text
+		font-size: 40px
 	.navbar
 		margin-top: 0px
 		.logo
@@ -272,6 +289,20 @@
 			&-text
 				font-size: 18px
 				line-height: 22px
+	.cooperation
+		.tabheader 
+			h3
+				font-size: 20px
+			&__items
+				margin-top: 20px
+				
+			&__item
+				font-size: 16px
+				margin-top: 10px
+				&_active 
+					font-size: 20px
+		.tabcontent
+			margin-top: 40px
 
 @media (max-width: 450px)
 
@@ -279,7 +310,7 @@
 		padding: 0 30px
 
 	.text
-		font-size: 30px
+		font-size: 34px
 
 	.bg-block
 		background-size: 185px
@@ -334,6 +365,11 @@
 					font-size: 22px
 
 	.cooperation
+		&__text
+			font-size: 16px
+			line-height: 20px
+			h4
+				font-size: 12px
 		&__button
 			font-size: 16px;	
 			&-one
@@ -344,12 +380,8 @@
 				height: 45px
 		
 		.tabheader 
-			margin-top: 20px
-			font-size: 16px
-			padding: 0
 			h3
 				font-size: 16px
-				font-weight: 400
 			&__items
 				margin-top: 25px
 				padding-left: 8px
@@ -382,7 +414,7 @@
 @media (max-width: 370px)
 	
 	.text
-		font-size: 28px
+		font-size: 30px
 
 	.navbar 
 		.menu__link 
@@ -413,5 +445,20 @@
 				height: 40px
 		&__text
 			font-size: 14px
+
+		.tabheader 
+			margin-top: 10px
+			h3
+				font-size: 15px
+			&__items
+				margin-top: 10px
+				
+			&__item
+				font-size: 14px
+				margin-top: 10px
+				&_active 
+					font-size: 16px
+		.tabcontent
+			margin-top: 40px
 
 
