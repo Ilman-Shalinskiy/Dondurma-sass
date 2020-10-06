@@ -216,8 +216,9 @@
 		max-width: 700px
 		margin-bottom: 0
 		text-align: left
-		
-
+		ul
+			list-style: inside
+			margin-bottom: 15px
 		
 			
 	&__button
@@ -283,9 +284,11 @@
 				transition-duration: .5s 
 	.show 
 		display: block
+		overflow: hidden
 
 	.hide 
 		display: none
+		
 	
 	.fade 
 		animation-name: fade
@@ -293,9 +296,11 @@
 
 	@keyframes fade 
 		from 
+			max-height: 0
 			opacity: 0.1
 		to 
 			opacity: 1
+			max-height: 815px
 			
 
 

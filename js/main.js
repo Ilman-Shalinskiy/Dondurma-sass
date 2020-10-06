@@ -60,6 +60,8 @@ window.addEventListener('DOMContentLoaded', () => {
         bodyActive.classList.toggle('body-hidden');
     });
 
+    
+
     menuItem.forEach(item => {
         item.addEventListener('click', () => {
             hamburger.classList.toggle('is-active');
@@ -67,4 +69,7 @@ window.addEventListener('DOMContentLoaded', () => {
             bodyActive.classList.toggle('body-hidden');
         });
     });
+
+    
 });
+
