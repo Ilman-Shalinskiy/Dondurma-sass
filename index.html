@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dondurma</title>
+    <link rel="shortcut icon" href="icons/favicon.png" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
     <link rel="stylesheet" href="css/hamburgers.css">
@@ -17,14 +18,14 @@
                         <a href="#"><img src="icons/logo.svg" alt="logo" class="logo"></a>
                         <ul class="menu line-hover">
                             <li class="menu__item "><a href="#" class="menu__link">Контакты</a></li>
-                            <li class="menu__item"><a href="#" class="menu__link">Где купить</a></li>
-                            <li class="menu__item"><a href="#" class="menu__link">Франшиза</a></li>
-                            <div class="main__social">
-                                <a href="#" class="main__social-item"><img src="icons/twitter.svg" alt="twitter"></a>
-                                <a href="#" class="main__social-item"><img src="icons/vk.svg" alt="vk"></a>
-                                <a href="#" class="main__social-item"><img src="icons/facebook.svg" alt="facebook"></a>
-                                <a href="#" class="main__social-item"><img src="icons/instagram.svg" alt="instagram"></a>
-                            </div>
+                            <li class="menu__item"><a href="#location" class="menu__link">Где купить</a></li>
+                            <li class="menu__item"><a href="#cooperation" class="menu__link">Cотрудничество</a></li>
+                            <li class="main__social">
+                                <a href="#" target="_blank"  class="main__social-item"><img src="icons/twitter.svg" alt="twitter"></a>
+                                <a href="#" target="_blank" class="main__social-item" ><img src="icons/vk.svg" alt="vk"></a>
+                                <a href="#" target="_blank" class="main__social-item" ><img src="icons/facebook.svg" alt="facebook"></a>
+                                <a href="#" target="_blank" class="main__social-item" ><img src="icons/instagram.svg" alt="instagram"></a>
+                            </li>
                         </ul>
                         <div class="number line-hover">
                             <a href="tel:79260663333" class="phone">+7(926)066-33-33</a>
@@ -96,58 +97,14 @@
                 </div>
             </section>
             
-    
-            <section class="location" id="location">
-                <!-- <img src="img/romb-right.png" alt="" class="location__romb-right"> -->
-                <div class="container">
-                    <h2 class="location__wrapper-header text">Где купить?</h2>
-                        <div class="location__wrapper"> 
-                            <div class="location__wrapper-content">
-                                <div class="location__info">
-                                    <div class="location__info-item "> 
-                                        <a href="https://goo.gl/maps/2QKn5JsqfttTg7Q39" target="_blank">
-                                            VEGAS Крокус Сити
-                                        </a><br>
-                                        м.Мякинино 66км МКАД <br>
-                                        Фуд-корт <br>
-                                        3 этаж
-                                    </div>
-                                    <hr>
-                                    <div class="location__info-item">
-                                        <a href="https://goo.gl/maps/jg8hJSqPGaiWcBPXA" target="_blank">
-                                            ТРЦ Авиапарк
-                                        </a><br>
-                                        Ходынский бульвар 4 <br>
-                                        Фуд-корт <br> 
-                                        4 этаж
-                                    </div>
-                                    <hr>
-                                    <div class="location__info-item">
-                                        <a href="https://goo.gl/maps/yeynfPErUgDHDgGm8" target="_blank">
-                                            VEGAS Каширское
-                                        </a><br>
-                                        МКАД 25км (внутр) <br>
-                                        Владение 4 <br> 
-                                        Строение 1
-                                    </div>
-                                </div>
-
-                                <div class="location__img">
-                                    <img src="img/location_img.png" alt="">
-                                </div>
-                            </div>
-                        </div>
-                        
-                </div>
-            </section>
-
             <section class="cooperation" id="cooperation">
+                
                 <div class="container">
                     <h2 class="cooperation__header text">Cотрудничество</h2>
                     <div class="tabcontainer">
                         <div class="tabcontent">
                             <div class="cooperation__text">
-                                <h4>Придумайте какой-нибудь загаловок)</h4>
+                                <h4>Придумайте какой-нибудь заголовок</h4>
                                 <ul>
                                     <li>Площадь - 3-16кв. м</li>
                                     <li>Инвестиции - от 500 000</li>
@@ -155,10 +112,10 @@
                                     <li>Окупаемость - 6-12 месяцев</li>
                                 </ul>
 
-                                <h4>Придумайте какой-нибудь загаловок)</h4>
+                                <h4>Придумайте какой-нибудь заголовок</h4>
                                 <ul>
                                     <li>Стойка мороженого</li>
-                                    <li>морозильный ларь</li>
+                                    <li>Морозильный ларь</li>
                                 </ul>
                                 
                                 <h4>Поможем привезти профессионального Турка:</h4>
@@ -202,11 +159,23 @@
                                     <li>Расходные материалы </li>
                                 </ul>
 
-                                <h4>Предлогаем выбрать 3 вида мороженного:</h4>
-                                <ul>
-                                    <li>Ванильное</li>
-                                    <li>Шоколадное</li>
-                                    <li>Фисташковое</li>
+                                <h4>Предлогаем выбрать несколько видов мороженного:</h4>
+                                <ul class="ul-flex">
+                                    <li> Ананасовое </li>
+                                    <li> Бабл-гам </li>
+                                    <li> Банановое </li>
+                                    <li> Вишнёвое </li>
+                                    <li> Карамельное </li>
+                                    <li> Клубничное </li>
+                                    <li> Лимонное </li>
+                                    <li> Малиновое </li>
+                                    <li> Манго </li>
+                                    <li> Маракуйя </li> 
+                                    <li> Мятное </li>
+                                    <li> Орео </li>
+                                    <li> Пломбир </li> 
+                                    <li> Фисташковое </li>
+                                    <li> Шоколадное </li>
                                 </ul>
 
                                 <h4>Турецкие сладости</h4>
@@ -242,7 +211,53 @@
                         </div>
                     </div>
                 </div>
-            </section> 
+            </section>
+    
+            <section class="location" id="location">
+                <!-- <img src="img/romb-right.png" alt="" class="location__romb-right"> -->
+                <div class="container">
+                    <h2 class="location__wrapper-header text">Где купить?</h2>
+                        <div class="location__wrapper"> 
+                            <div class="location__wrapper-content">
+                                <div class="location__info">
+                                    <div class="location__info-item "> 
+                                        <a href="https://goo.gl/maps/2QKn5JsqfttTg7Q39" target="_blank">
+                                            VEGAS Крокус Сити
+                                        </a><br>
+                                        м.Мякинино 66км МКАД <br>
+                                        Фуд-корт <br>
+                                        3 этаж
+                                    </div>
+                                    
+                                    <div class="location__info-item">
+                                        <a href="https://goo.gl/maps/jg8hJSqPGaiWcBPXA" target="_blank">
+                                            ТРЦ Авиапарк
+                                        </a><br>
+                                        Ходынский бульвар 4 <br>
+                                        Фуд-корт <br> 
+                                        4 этаж
+                                    </div>
+                                    
+                                    <div class="location__info-item">
+                                        <a href="https://goo.gl/maps/yeynfPErUgDHDgGm8" target="_blank">
+                                            VEGAS Каширское
+                                        </a><br>
+                                        МКАД 25км (внутр) <br>
+                                        Владение 4 <br> 
+                                        Строение 1
+                                    </div>
+                                </div>
+
+                                <div class="location__img">
+                                    <img src="img/location_img.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        
+                </div>
+            </section>
+
+             
     
             
         </main>
@@ -253,8 +268,8 @@
                     <div class="footer__wrapper-info">
                         <div class="footer__about line-hover">
                             <h2 class="footer__about-header">About Us</h2>
-                            <p class="footer__about-text">VEGAS. <br> м.Мякинин <br> Крокус СитиФуд-корт<br> 3 этаж.</p>
-                            <a class="footer__about-number" href="tel:79260663333">+7 (926) 066-33-33</a>
+                            <div class="footer__about-text">VEGAS. <br> м.Мякинин <br> Крокус СитиФуд-корт<br> 3 этаж.</div>
+                            <a class="footer__about-number" href="tel:79260663333">7 (926) 066-33-33</a>
                         </div>
                         <div class="footer__social line-hover">
                             <h2 class="footer__social-header">Social</h2>

@@ -1,8 +1,9 @@
 'use strict';
+window.addEventListener('DOMContentLoaded', () => {
 
-const   tabs = document.querySelectorAll('.tabheader__item'),
-        tabsContent = document.querySelectorAll('.tabcontent'),
-        tabsParent = document.querySelector('.tabheader__items');
+    const   tabs = document.querySelectorAll('.tabheader__item'),
+            tabsContent = document.querySelectorAll('.tabcontent'),
+            tabsParent = document.querySelector('.tabheader__items');
 
     function hideTabContent() {
         
@@ -40,36 +41,35 @@ const   tabs = document.querySelectorAll('.tabheader__item'),
 
 
 
+    // hamburger
 
-
-
-
-
-
-
-
-window.addEventListener('DOMContentLoaded', () => {
     const menu = document.querySelector('.menu'),
-    menuItem = document.querySelectorAll('.menu_item'),
+    menuItem = document.querySelectorAll('.menu__link'),
     hamburger = document.querySelector('.hamburger'),
     bodyActive = document.querySelector('body');
 
-    hamburger.addEventListener('click', () => {
+    function menuToggle() {
         hamburger.classList.toggle('is-active');
         menu.classList.toggle('menu_active');
         bodyActive.classList.toggle('body-hidden');
-    });
+    }
 
+    hamburger.addEventListener('click', () => {
+        menuToggle();
+    });
     
+
 
     menuItem.forEach(item => {
+         
         item.addEventListener('click', () => {
-            hamburger.classList.toggle('is-active');
-            menu.classList.toggle('menu_active');
-            bodyActive.classList.toggle('body-hidden');
-        });
+            if (menu.classList.contains('menu_active')) {
+                menuToggle();
+            }
+        });  
+        
     });
-
     
+ 
 });
 
