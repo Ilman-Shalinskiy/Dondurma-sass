@@ -1,8 +1,6 @@
 .body-hidden
 	overflow: hidden
 
-.click-close
-
 .bg-block
 	z-index: -100
 	position: absolute
@@ -15,7 +13,7 @@
 
 .line-hover a:hover
 	text-decoration: none
-	color: #bebebe
+	color: #e7e7e7
 
 .line-hover a
 	display: inline-block
@@ -23,14 +21,14 @@
 	cursor: pointer
 
 	&:after
-		background-color: #bebebe
+		background-color: #e7e7e7
 		display: block
 		content: ""
-		height: 3px
+		height: 2px
 		width: 0%
 		-webkit-transition: width .5s ease-in-out
 		-moz--transition: width .5s ease-in-out
-		transition: width .5s ease-in-out
+		transition: width .6s ease-in-out
 
 	&:hover:after, &:focus:after
 		width: 100%
