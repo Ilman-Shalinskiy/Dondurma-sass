@@ -46,30 +46,38 @@ window.addEventListener('DOMContentLoaded', () => {
     const menu = document.querySelector('.menu'),
     menuItem = document.querySelectorAll('.menu__link'),
     hamburger = document.querySelector('.hamburger'),
+    hamburgerOverley = document.querySelector('.hamburger__overley'),
     bodyActive = document.querySelector('body');
+    
 
     function menuToggle() {
         hamburger.classList.toggle('is-active');
         menu.classList.toggle('menu_active');
         bodyActive.classList.toggle('body-hidden');
+        hamburgerOverley.classList.toggle('hamburger__overley-show');
     }
 
+    
     hamburger.addEventListener('click', () => {
         menuToggle();
     });
+    hamburgerOverley.addEventListener('click', () => {
+       if (hamburgerOverley.classList.contains('hamburger__overley-show')) {
+        menuToggle();
+       }
+    });
     
-
-
-    menuItem.forEach(item => {
-         
+    menuItem.forEach(item => { 
         item.addEventListener('click', () => {
             if (menu.classList.contains('menu_active')) {
                 menuToggle();
             }
-        });  
-        
+        });    
     });
+
     
+
+
  
 });
 

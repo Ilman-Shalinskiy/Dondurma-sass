@@ -1,10 +1,10 @@
-.body-hidden 
-    overflow: hidden
+.body-hidden
+	overflow: hidden
 
 .click-close
 
 .bg-block
-	z-index: -1
+	z-index: -100
 	position: absolute
 	top: 0
 	background: url(../img/bg.png) top (center / cover) repeat
@@ -35,7 +35,6 @@
 	&:hover:after, &:focus:after
 		width: 100%
 
-
 .text
 	font-style: normal
 	font-weight: bold
@@ -47,24 +46,29 @@
 	padding: 0 10px
 	margin: 0 auto
 
-  
 .navbar
 	display: flex
 	justify-content: start
 	align-items: center
 	margin-top: 20px
-.logo
-	max-width: 150px
-	flex: 0 1 150px
+	.logo
+		max-width: 150px
+		flex: 0 1 150px
 
-.menu
-	display: flex
-	flex: 1 1 auto
-	&__item
-		list-style-type: none
-		margin: 0 16px
+	.menu
+		display: flex
+		flex: 1 1 auto
+		&__link
+			margin: 0 16px
+			text-decoration: none
+			font-weight: 500
+			font-size: 24px
+			color: #FFFFFF
+	.number
+		font-size: 24px
 
-.hamburger 
+
+.hamburger
 	color: #fff
 	padding: 15px 15px
 	display: inline-block
@@ -78,25 +82,25 @@
 	background-color: transparent
 	border: 0
 	margin: 0
-	overflow: visible 
+	overflow: visible
 
 .hamburger.is-active .hamburger-inner,
 .hamburger.is-active .hamburger-inner::before,
-.hamburger.is-active .hamburger-inner::after 
-	background-color: #000 
+.hamburger.is-active .hamburger-inner::after
+	background-color: #000
 
-.hamburger-box 
+.hamburger-box
 	width: 40px
 	height: 24px
 	display: inline-block
 	position: relative
 
-.hamburger-inner 
+.hamburger-inner
 	display: block
 	top: 50%
 	margin-top: -2px
 
-.hamburger-inner, .hamburger-inner::before, .hamburger-inner::after 
+.hamburger-inner, .hamburger-inner::before, .hamburger-inner::after
 	width: 40px
 	height: 3px
 	background-color: rgb(255, 255, 255)
@@ -105,54 +109,63 @@
 	transition-property: transform
 	transition-duration: 0.15s
 	transition-timing-function: ease
-	
-.hamburger-inner::before, .hamburger-inner::after 
+
+.hamburger-inner::before, .hamburger-inner::after
 	content: ""
 	display: block
 
-.hamburger-inner::before 
+.hamburger-inner::before
 	top: -10px
 
-.hamburger-inner::after 
+.hamburger-inner::after
 	bottom: -10px
 
-
-.hamburger--spin-r .hamburger-inner 
+.hamburger--spin-r .hamburger-inner
 	transition-duration: 0.33s
 	transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19)
 
-.hamburger--spin-r .hamburger-inner::before 
+.hamburger--spin-r .hamburger-inner::before
 	transition: top 0.1s 0.25s ease-in, opacity 0.1s ease-in
 
-.hamburger--spin-r .hamburger-inner::after 
+.hamburger--spin-r .hamburger-inner::after
 	transition: bottom 0.1s 0.25s ease-in, transform 0.22s cubic-bezier(0.55, 0.055, 0.675, 0.19)
 
-.hamburger--spin-r.is-active .hamburger-inner 
+.hamburger--spin-r.is-active .hamburger-inner
 	transform: rotate(-225deg)
 	transition-delay: 0.12s
 	transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1)
 
-.hamburger--spin-r.is-active .hamburger-inner::before 
+.hamburger--spin-r.is-active .hamburger-inner::before
 	top: 0
 	opacity: 0
 	transition: top 0.1s ease-out, opacity 0.1s 0.12s ease-out
 
-.hamburger--spin-r.is-active .hamburger-inner::after 
+.hamburger--spin-r.is-active .hamburger-inner::after
 	bottom: 0
 	transform: rotate(90deg)
 	transition: bottom 0.1s ease-out, transform 0.22s 0.12s cubic-bezier(0.215, 0.61, 0.355, 1)
 
+.hamburger__overley
+	display: none
+	position: fixed
+	top: 0
+	left: 0
+	width: 100vw
+	height: 100vh
+	z-index: 90
+
+.hamburger__overley-show
+	display: block
+	background-color: rgba(0, 0, 0, 0.5)
 
 
 .menu .main__social, .hamburger
 	display: none
-		
-.menu__link, .phone
+
+.phone
 	text-decoration: none
 	font-weight: 500
-	font-size: 24px
 	color: #FFFFFF
-	z-index: 99
 
 .main
 	margin-top: 70px
@@ -177,7 +190,7 @@
 			color: #F2F2F2
 			line-height: 160px
 		&-text
-			
+
 			font-style: normal
 			font-weight: normal
 			font-size: 24px
@@ -213,7 +226,6 @@
 .mobile__man
 	display: none
 
-
 .promo
 	margin-top: 70px
 	&__wrapper-content
@@ -230,7 +242,7 @@
 	&__item
 		display: flex
 		align-items: center
-		
+
 		font-weight: 500
 		margin-bottom: 40px
 		list-style: none
@@ -242,8 +254,6 @@
 			max-width: 250px
 			margin: 0
 
-
-
 .location
 	margin-top: 110px
 	&__romb-right
@@ -254,7 +264,10 @@
 		display: flex
 		justify-content: space-between
 		align-items: center
-		margin-top: 72px
+		margin-top: 40px
+		padding: 10px 0
+		border-top: 2px solid #fff
+		border-bottom: 2px solid #fff
 	&__info
 		flex: 0 1 50%
 		display: flex
@@ -265,28 +278,27 @@
 		font-weight: 500
 		line-height: 42px
 		color: #FFFFFF
-		&-item 
+		&-item
 			margin: 15px 0
 			&:first-child
 				margin-top: 0
 			&:last-child
 				margin-bottom: 0
-			a 
+			a
 				font-size: 32px
 				font-weight: 800
 				text-decoration: underline
 				color: #fff
-		
+
 	&__img
 		flex: 0 1 50%
 		img
 			width: 100%
-		
-	
+
 .cooperation
 	margin-top: 120px
 	min-height: 300px
-		
+
 	&__text
 		font-weight: normal
 		font-size: 20px
@@ -305,8 +317,7 @@
 			flex-wrap: wrap
 			li
 				flex: 0 0 50%
-		
-			
+
 	&__button
 		// border-top: 2px dashed #72003C
 		width: 98%
@@ -318,8 +329,7 @@
 		font-weight: 500
 		font-size: 18px
 		margin-top: 15px
-		
-		
+
 		&-one
 			display: flex
 			justify-content: center
@@ -330,7 +340,7 @@
 			border-radius: 100px
 			cursor: pointer
 			color: #FFFFFF
-			
+
 		&-two
 			display: flex
 			justify-content: center
@@ -344,13 +354,13 @@
 
 	.tabcontainer
 		display: flex
-		align-items: start		
-		
+		align-items: start
+
 	.tabcontent
 		width: 98%
 		flex: 0 1 65%
-		
-	.tabheader 
+
+	.tabheader
 		font-weight: 800
 		font-size: 16px
 		padding: 15px 30px 35px
@@ -365,42 +375,34 @@
 			margin-top: 10px
 			cursor: pointer
 			transition: .3s all
-			&_active 
+			&_active
 				color: #000
 				font-size: 20px
 				font-weight: 800
-				transition-duration: .5s 
-	.show 
-		display: block
-		overflow: hidden
+				transition-duration: .5s
 
-	.hide 
-		display: none
-		
-	
-	.fade-in
-		animation-name: fade-in
-		animation-duration: 2.5s
+.show
+	display: block
+	overflow: hidden
 
-	@keyframes fade-in
-		from 
-			max-height: 0
-			opacity: 0.1
-		to 
-			opacity: 1
-			max-height: 815px
-	
-	
-			
+.hide
+	display: none
 
+.fade-in
+	animation-name: fade-in
+	animation-duration: 3s
 
-
-
-	
+@keyframes fade-in
+	from
+		max-height: 0
+		opacity: 0.1
+	to
+		opacity: 1
+		max-height: 1150px
 
 
 .footer
-	
+
 	margin-top: 90px
 	&__wrapper
 		display: flex
@@ -414,26 +416,21 @@
 		margin-right: 72px
 	&__about-header, &__social-header
 		font-size: 14px
-		
+
 		font-style: normal
 		font-weight: bold
 		color: #FFFFFF
 	&__about-text, &__about-number, &__social-link
-		
+
 		font-weight: normal
 		font-size: 14px
 		line-height: 24px
 		max-width: 207px
 		color: #fff
 	&__wrapper-team
-		
+
 		font-weight: normal
 		font-size: 12px
 		margin-top: 40px
 		padding: 20px 0
 		border-top: 1px solid #fff
-
-
-    
-
-
