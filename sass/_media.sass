@@ -28,17 +28,13 @@
 @media (max-width: 855px)
 	
 	.main__order-btn
-		transform: translateY(-50%)
-		margin-right: 40px
-		padding: 0px 30px
-		display: inline-flex
+		padding: 0px 120px
 		&:hover
-			padding: 0px 45px
+			padding: 0px 120px
 	.main__man
 		display: none
 
-	.mobile__man
-		display: inline
+	
 	
 	.navbar
 		.menu
@@ -113,6 +109,8 @@
 				width: 100%
 				&:first-child
 					margin-top: 100px
+				&:hover
+					color: #000000
 		.number
 			font-size: 24px
 			margin: auto
@@ -125,17 +123,16 @@
 		&__social, &__man
 			display: none
 
-		&__order-title
-			font-size: 200px
-			line-height: 200px
-
-		&__order-text
-			font-size: 24px
-			line-height: 127%
-			max-width: 535px
-
-		&__order-btn
-			width: 40vw
+		&__order
+			&-title
+				font-size: 200px
+				line-height: 200px
+			&-text
+				font-size: 24px
+				line-height: 127%
+				max-width: 535px
+			&-btn
+				// width: 60vw
 
 	.promo
 		&__wrapper-content
@@ -196,7 +193,7 @@
 
 @media (max-width: 650px)
 	main, .footer__wrapper-info
-		padding: 0 10px 0 40px
+		padding: 0 10px 0 30px
 
 	.logo
 		max-width: 120px
@@ -204,31 +201,24 @@
 
 
 	.main
+		margin-top: 0
 		&__order
 			display: flex
 			flex-direction: column
 			align-items: center
+			&-man
+				display: block
+				width: 250px
 			&-title
-				order: 2
 				font-size: 180px
-				line-height: 120px
-				margin-top: 30px
+				line-height: 100px
+				margin-top: 0
 			&-text
-				order: 3
 				text-align: center
 				font-size: 22px
 			&-btn
-				display: flex
-				align-items: center
-				justify-content: center
-				transform: translateY(0%)
-				margin-right: 0px
-				margin-top: 2px
 				width: 90%
-				order: 4
-			.mobile__man
-				margin: 0 auto
-				order: 1
+			
 
 	
 
@@ -293,6 +283,8 @@
 
 	.main
 		&__order
+			&-man
+				width: 200px
 			&-title
 				font-size: 135px
 				line-height: 90px
@@ -335,20 +327,20 @@
 			font-size: 18px
 		  
 	.main
-		margin-top: 25px
 		&__order
+			&-man 
+				width: 170px
 			&-title
 				font-size: 100px
 				line-height: 50px
 			&-text
-				font-size: 20px
+				font-size: 19px
 				margin-top: 15px
 			&-btn
-				// width: 200px
+				padding: 0 20px
 				height: 60px
 				font-size: 21px
-			.mobile__man
-				max-width: 170px
+			
 
 
 
@@ -434,6 +426,12 @@
 			width: 40px
 			height: 40px
 
+	.main
+		&__order
+			&-man
+				width: 130px
+			&-text
+				font-size: 17px
 	.promo
 		&__item
 			&-text
